@@ -1,0 +1,61 @@
+/* remove the default magins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font */
+}
+
+#video-container {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+
+    /* 6 porperties of flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-player {
+    width: 960px;
+    height: 720px;
+}
+
+.nav-button {
+    /* background-color: aquamarine; */
+    background-color: transparent;
+    font-size: 50px;
+    border: 0;
+    color: brown;
+}
+
+.nav-button:hover {
+    /* background-color: rgb(255, 0, 0, 0.3); */
+    color: orangered;
+    cursor: pointer;
+}
+
+#left-button {
+    position: fixed;
+    left: 100px;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+}
+
+#right-button {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}

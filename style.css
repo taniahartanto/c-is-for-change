@@ -1,0 +1,91 @@
+/* remove the default magins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font */
+}
+
+@font-face {
+    font-family: KidLearningHowToWrite-Regular;
+    src: url(fonts/KidLearningHowToWrite-Regular.ttf);
+}
+
+button {
+    text-align: center;
+    font-weight: bold;
+    font-family: KidLearningHowToWrite-Regular;
+    /* text-decoration: none;
+    background-color: rgb(240, 193, 40);
+    border: none;
+    color: rgb(108, 34, 178);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    ; */
+}
+
+#video-container {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+    /* 6 porperties of flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-player {
+    width: 960px;
+    height: 720px;
+}
+
+.nav-button {
+    /* background-color: aquamarine; */
+    background-color: transparent;
+    font-size: 24px;
+    border: 0;
+    color: white;
+}
+
+.nav-button:hover {
+    /* background-color: rgb(255, 0, 0, 0.3); */
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+#back-button {
+    display: none;
+    width: 100px;
+    height: 80px;
+
+    position: fixed;
+    left: calc(50% - 400px);
+    top: calc(50% + 0px);
+    transform: translate(-50%, -50%);
+}
+
+#next-button {
+    /* display: none; */
+    width: 150px;
+    height: 24px;
+    /* background-color: aqua; */
+    opacity: 1;
+
+    position: fixed;
+    left: calc(50% + 300px);
+    top: calc(50% + 0px);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,69 @@
+/* remove the default magins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font */
+}
+
+#video-container {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+
+    /* 6 porperties of flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-player {
+    width: 960px;
+    height: 720px;
+}
+
+.nav-button {
+    /* background-color: aquamarine; */
+    background-color: transparent;
+    font-size: 50px;
+    border: 0;
+    color: brown;
+}
+
+.nav-button:hover {
+    /* background-color: rgb(255, 0, 0, 0.3); */
+    color: orangered;
+    cursor: pointer;
+}
+
+#back-button {
+    display: none;
+    width: 100px;
+    height: 80px;
+
+    position: fixed;
+    left: calc(50% - 400px);
+    top: calc(50% + 0px);
+    transform: translate(-50%, -50%);
+}
+
+#next-button {
+    /* display: none; */
+    width: 100px;
+    height: 80px;
+    /* background-color: aqua; */
+
+    position: fixed;
+    left: calc(50% + 400px);
+    top: calc(50% + 0px);
+    transform: translate(-50%, -50%);
+}
