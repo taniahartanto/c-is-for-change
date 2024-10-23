@@ -39,11 +39,10 @@ let buttonNext = document.getElementById("next-button");
 
 function updateButtons() {
     console.log(videoIndex);
-    if (videoIndex == 0) {
-        // For the first video (cover page), set the "open journal" button
-        setNextButton("open journal", 300, 0, 200, 24);
-    }
-    else if (videoIndex == 1) {
+    // if (videoIndex == 0) {
+    //     setNextButton("open journal", 300, 0, 200, 24);
+    // }
+    if (videoIndex == 1) {
         // place the button on the right!
         setNextButton("next page", 350, 300, 125, 24);
         //setBackButton("test1", -100, 0, 500, 100);
@@ -168,11 +167,11 @@ function updateButtons() {
         setNextButton("write letter", -180, 0, 500, 100);
         //setBackButton("test1", -100, 0, 500, 100);
     }
-    else if (videoIndex == 25) {
-        // place the button on the right!
-        setNextButton("back to the beginning", 350, 300, 125, 24);
-        //setBackButton("test1", -100, 0, 500, 100);
-    }
+    // else if (videoIndex == 25) {
+    //     // place the button on the right!
+    //     setNextButton("back to the beginning", 350, 300, 125, 24);
+    //     //setBackButton("test1", -100, 0, 500, 100);
+    // }
 }
 
 function hideButtons() {
@@ -228,19 +227,18 @@ function moveForward() {
     videoPlayer.src = videoFolder + videoFiles[videoIndex];
     videoPlayer.currentTime = 0; // start over
     videoPlayer.play();
-
     hideButtons();
 }
 
-videoPlayer.addEventListener("ended", function () {
-    if (videoIndex === 26) {
-        // After video 26, reset to video index 0 (start over)
-        videoIndex = 0;
-        videoPlayer.src = videoFolder + videoFiles[videoIndex];
-        videoPlayer.currentTime = 0;
-        videoPlayer.play();
-    } else {
-        updateButtons(); // Continue with normal button logic
-    }
-});
+// videoPlayer.addEventListener("ended", function () {
+//     if (videoIndex === 26) {
+//         // After video 26, reset to video index 0 (start over)
+//         videoIndex = 0;
+//         videoPlayer.src = videoFolder + videoFiles[videoIndex];
+//         videoPlayer.currentTime = 0;
+//         videoPlayer.play();
+//     } else {
+//         updateButtons(); // Continue with normal button logic
+//     }
+// });
 
