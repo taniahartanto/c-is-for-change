@@ -63,7 +63,7 @@ button {
 .nav-button:hover {
     /* background-color: rgb(255, 0, 0, 0.3); */
     text-decoration: underline;
-    color: red;
+    color: rgb(226, 43, 92);
     cursor: pointer;
 }
 
@@ -89,4 +89,30 @@ button {
     left: calc(50% + 300px);
     top: calc(50% + 0px);
     transform: translate(-50%, -50%);
+}
+
+/* Add styles for start page */
+#start-container {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox for centering the link */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dedication-link {
+    text-align: center;
+    font-family: KidLearningHowToWrite-Regular;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+#dedication-link:hover {
+    text-decoration: underline;
+    color: rgb(226, 43, 92);
+    cursor: pointer;
 }

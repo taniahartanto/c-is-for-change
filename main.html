@@ -10,8 +10,25 @@
 </head>
 
 <body>
-    <!-- Navigation link to this index.html -->
-    <a href="index.html">Link to Index</a>
+    <div id="video-container">
+        <video id="video-player" autoplay>
+            <source src="videos/01-cover-page.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- <div id="test-box">test</div> -->
+    </div>
+
+    <button onclick="moveBack()" class="nav-button" id="back-button">
+        back
+    </button>
+
+    <button onclick="moveForward()" class="nav-button" id="next-button">
+        open journal
+        <!-- <img src="" alt=""> -->
+    </button>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
